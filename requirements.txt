@@ -1,4 +1,4 @@
-Pillow
+echo "Pillow
 python-vlc
 cryptography
-psutil
+psutil" > requirements.txt
