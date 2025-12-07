@@ -241,17 +241,6 @@ Real engineers WILL.
 
 ---
 
-# 📸 **Preview Screenshots (Optional)**
-
-Add images here when ready:
-
-```
-![Login Screen](assets/login.png)
-![Table Viewer](assets/table.png)
-```
-
----
-
 # ⭐ **Support This Madness**
 
 If SpeedDB emotionally damaged you or impressed you, consider leaving a star on the repo.
