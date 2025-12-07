@@ -1,8 +1,259 @@
-SpeedDB — A TCP Encrypted Toy Database With a Chaotic GUI
-A fully unserious student project built with a very serious tech stack.
+# **SpeedDB — Encrypted TCP Mini-Database With a Chaotic GUI**
 
-Live Repo: https://github.com/rishav-data/SpeedDB
+*A dangerously over-engineered student project featuring encryption, sockets, custom GUI, packaged EXE, and IShowSpeed yelling at your errors.*
 
-Author: Rishav (a man clearly losing sanity at 4 AM while packaging a DB with Speed screaming at him)
+---
 
-If you would like to add audio and clips for the UI to work properly , put a speed image in the clips folder and vlc clips in the same folder and mp3 files in the audio subfolder inside the clips folder and you are good to go. Just run dbaccess.py and the server will autolaunch. 
+## 🚀 **Overview**
+
+**SpeedDB** is a fully custom, encrypted, file-based database system built from scratch using:
+
+* **Python sockets** (TCP server)
+* **Custom command protocol**
+* **Fernet encryption**
+* **Tkinter GUI client**
+* **Threading**
+* **PyInstaller packaging**
+* **python-vlc media integration**
+
+This project simulates a real database engine — but with the unhinged twist of playing IShowSpeed videos and screams whenever a user messes up a command.
+
+It started as a simple college project.
+It ended as a psychological horror database engine.
+
+---
+
+# 🧠 **Architecture**
+
+```
+┌────────────────────┐
+│   SpeedDB Client   │  ← GUI, Videos, Audio, Commands
+│    dbaccess.py     │
+└─────────┬──────────┘
+          │  TCP (port 6969)
+          ▼
+┌────────────────────┐
+│  SpeedDB Server    │  ← Encryption, Storage Engine
+│ speeddb_server.py  │
+└─────────┬──────────┘
+          ▼
+   Encrypted JSON Tables
+   /speeddb_data/*.json
+```
+
+---
+
+# ⚙️ **Tech Stack**
+
+| Component         | Technology               | Purpose                           |
+| ----------------- | ------------------------ | --------------------------------- |
+| **Language**      | Python 3.10              | Primary runtime                   |
+| **GUI**           | Tkinter                  | Multi-screen desktop UI           |
+| **Media Engine**  | python-vlc               | Plays videos & audio in reactions |
+| **Encryption**    | cryptography (Fernet)    | Encrypts table files              |
+| **File Handling** | JSON + Fernet ciphertext | Encrypted DB storage              |
+| **Server**        | Python sockets           | Handles AUTH, GET, INSERT, DELETE |
+| **Threading**     | `threading.Thread`       | Runs server in background         |
+| **Build System**  | PyInstaller              | Creates Windows `.exe`            |
+| **Images**        | Pillow (PIL)             | Image loading & resizing          |
+
+---
+
+# 🔐 **Encryption Model**
+
+SpeedDB encrypts every table using:
+
+```
+Fernet( base64.urlsafe_b64encode( SHA256(PASSWORD) ) )
+```
+
+This provides:
+
+* AES-128 CBC + HMAC security
+* Encrypted data-at-rest
+* No readable plaintext on disk
+* Key derived from a static password for reproducible decryption
+
+Opening a `.json` table manually shows only ciphertext like:
+
+```
+gAAAAABl2W0IY7n3uEo4rQ...
+```
+
+---
+
+# 📦 **Running SpeedDB**
+
+### ✔ Run From Source
+
+Install dependencies:
+
+```bash
+pip install pillow python-vlc cryptography
+```
+
+Start the GUI client (starts server automatically):
+
+```bash
+python dbaccess.py
+```
+
+---
+
+### ✔ Build Windows Executable
+
+Use PyInstaller:
+
+```bash
+pyinstaller --windowed --add-data "clips;clips" --icon="speed_icon.ico" dbaccess.py
+```
+
+Output appears at:
+
+```
+dist/dbaccess/
+```
+
+Run `dbaccess.exe` from anywhere.
+
+---
+
+# 🎛️ **GUI Features**
+
+### Login Screen
+
+* Speed face banner
+* Fields for:
+
+  * URL
+  * DB Key
+  * Table
+  * Root Key
+* Enter key binds for smooth UX
+* Wrong root key → Speed video jumpscare
+
+### Data Viewer
+
+* Table loaded from server
+* Scrollable row display
+* Command input box
+* Integrated console output
+* Speed screams on errors
+
+---
+
+# 🧪 **Command Reference**
+
+| Command                              | Description               |
+| ------------------------------------ | ------------------------- |
+| `AUTH user password`                 | Authenticate to server    |
+| `LIST_TABLES`                        | Show all tables           |
+| `CREATE_TABLE name col1 col2 ...`    | Create table with columns |
+| `GET_TABLE name`                     | Fetch rows                |
+| `INSERT table {json}`                | Insert JSON row           |
+| `DELETE_ROW table WHERE key="value"` | Delete rows by condition  |
+| `HELP`                               | Show command list         |
+
+---
+
+# 🎞️ **Media System**
+
+SpeedDB supports custom:
+
+* Video clips
+* Audio clips
+* Static PNG/JPEG images
+
+### Folder Structure
+
+```
+clips/
+    speed_mad1.mp4
+    speed_mad2.mp4
+    ...
+    speed_face.png
+    audio/
+         bark.mp3
+         scream.mp3
+         ...
+```
+
+### Add Your Own Clips
+
+To replace or add new media, simply drop files into:
+
+```
+clips/
+clips/audio/
+```
+
+Then update the lists in `dbaccess.py`:
+
+```python
+SPEED_MAD_CLIPS = [
+    os.path.join(CLIPS_DIR, "your_clip.mp4"),
+]
+```
+
+### Custom App Icon
+
+Replace `speed_icon.ico` → rebuild → enjoy new branding.
+
+---
+
+# 🧩 **Internal Server Behavior**
+
+SpeedDB server (`speeddb_server.py`):
+
+* Listens on `0.0.0.0:6969`
+* Spawns new threads for each client
+* Validates authentication
+* Loads / decrypts / updates JSON tables
+* Writes encrypted blobs back to disk
+* Handles malformed input gracefully (usually)
+
+---
+
+# 💡 **Why This Project Exists**
+
+Because:
+
+* college projects are boring
+* databases shouldn’t be
+* socket servers are fun
+* encryption makes anything cooler
+* and Speed yelling at your errors builds character
+
+This project shows:
+
+* understanding of **systems programming**
+* custom protocol design
+* socket networking
+* data encryption
+* GUI development
+* packaging & distribution
+* asynchronous architecture
+* media integration
+* engineering chaos
+
+DSA recruiters will NOT understand this.
+Real engineers WILL.
+
+---
+
+# 📸 **Preview Screenshots (Optional)**
+
+Add images here when ready:
+
+```
+![Login Screen](assets/login.png)
+![Table Viewer](assets/table.png)
+```
+
+---
+
+# ⭐ **Support This Madness**
+
+If SpeedDB emotionally damaged you or impressed you, consider leaving a star on the repo.
+
+It helps my sanity grow back. Probably. Please ... I need a job. My crippling soda and momo cravings has financially ruined me. The begging for a start isn't a request , it's a cry for help. 
