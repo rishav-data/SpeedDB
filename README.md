@@ -1,4 +1,4 @@
-## **DOWNLOAD THE LIVE APP OR EXE FILE ON ITCH.IO FOR FIRST HAND TRAUMA EXPERIENCE**
+## **DOWNLOAD THE LIVE APP/EXE FILE ON ITCH.IO FOR FIRST HAND TRAUMA EXPERIENCE**
 **[https://itch.io/dashboard](https://ritsuafk.itch.io/speeddb)**
 
 # **SpeedDB — Encrypted TCP Mini-Database With a Chaotic GUI**
