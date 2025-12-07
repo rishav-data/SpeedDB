@@ -269,3 +269,115 @@ If SpeedDB emotionally damaged you or impressed you, consider leaving a star on 
 It helps my sanity grow back. Probably. Please ... I need a job. My crippling soda and momo cravings has financially ruined me. The begging for a start isn't a request , it's a cry for help. 
 
 <img src="images/1.jpeg" width="500">
+
+
+
+# ⚠️ **Current Limitations (Short Version)**
+
+SpeedDB is an experimental student-built database and GUI client.
+It works, it’s fun, but it’s intentionally *simple*.
+Here are the major limitations you should know:
+
+---
+
+### **🔹 1. Limited Command Set**
+
+Only supports:
+
+* AUTH
+* LIST_TABLES
+* CREATE_TABLE
+* GET_TABLE
+* INSERT
+* DELETE_ROW
+* DROP_TABLE
+
+No SQL syntax, no UPDATE, no JOINs, no ORDER BY.
+
+---
+
+### **🔹 2. Minimal Query Logic**
+
+`WHERE` only supports simple:
+
+```
+WHERE key = "value"
+```
+
+No operators, no AND/OR, no advanced filtering.
+
+---
+
+### **🔹 3. Basic Encryption**
+
+Data at rest **is encrypted**, but:
+
+* Password transmitted in plaintext
+* No SSL/TLS
+* No rotating keys
+
+Good for local use, **not** production.
+
+---
+
+### **🔹 4. File-Based Storage**
+
+Tables are:
+
+* JSON lists (encrypted)
+* Loaded fully into memory
+* Written back fully on save
+
+This means no indexing, no pagination, no optimizations.
+
+---
+
+### **🔹 5. No Concurrency Control**
+
+Server is multi-threaded but:
+
+* No row/table locking
+* No transactions
+* Last write wins
+
+Works fine for light, local testing.
+
+---
+
+### **🔹 6. Simple Authentication**
+
+One shared password.
+No user system, no roles, no audit logging.
+
+---
+
+### **🔹 7. Not a Production Database**
+
+Missing:
+
+* Cloud deployment support
+* Backups/snapshots
+* Schemas or type validation
+* Binary/BLOB storage
+* Installer / auto-updater
+
+This project is meant for **learning**, not enterprise workloads.
+
+---
+
+### **🔹 8. GUI Limitations**
+
+Client GUI:
+
+* Displays tables
+* Sends raw commands
+* Doesn't edit/modify data directly
+* Requires user knowledge of command syntax
+
+---
+
+### **🔹 9. No Testing Framework Yet**
+
+There are no unit tests, integration tests, or CI pipeline.
+
+
