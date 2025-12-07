@@ -1,3 +1,6 @@
+## **DOWNLOAD THE LIVE APP OR EXE FILE ON ITCH.IO FOR FIRST HAND TRAUMA EXPERIENCE**
+**[https://itch.io/dashboard](https://ritsuafk.itch.io/speeddb)**
+
 # **SpeedDB — Encrypted TCP Mini-Database With a Chaotic GUI**
 
 *A dangerously over-engineered student project featuring encryption, sockets, custom GUI, packaged EXE, and IShowSpeed yelling at your errors.*
