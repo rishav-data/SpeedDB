@@ -1,8 +1,0 @@
-build/
-dist/
-*.spec
-__pycache__/
-*.pyc
-speeddb_data/
-.DS_Store
-Thumbs.db
