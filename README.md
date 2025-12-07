@@ -381,3 +381,5 @@ Client GUI:
 There are no unit tests, integration tests, or CI pipeline.
 
 
+**SpeedDB is a fun encrypted JSON-based toy database with a chaotic GUI.
+It’s intentionally lightweight, hackable, and experimental — perfect for learning sockets, encryption, PyInstaller, GUI building, and client-server architecture.**
