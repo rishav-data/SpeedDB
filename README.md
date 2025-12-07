@@ -18,7 +18,6 @@
 * **PyInstaller packaging**
 * **python-vlc media integration**
 
-<img src="images/1.jpeg" width="500">
 
 
 This project simulates a real database engine — but with the unhinged twist of playing IShowSpeed videos and screams whenever a user messes up a command.
@@ -63,7 +62,6 @@ It ended as a psychological horror database engine.
 | **Images**        | Pillow (PIL)             | Image loading & resizing          |
 
 
-<img src="images/2.jpeg" width="500">
 ---
 
 # 🔐 **Encryption Model**
@@ -105,6 +103,7 @@ Start the GUI client (starts server automatically):
 python dbaccess.py
 ```
 <img src="images/3.png" width="500">
+
 ---
 
 ### ✔ Build Windows Executable
@@ -123,15 +122,13 @@ dist/dbaccess/
 
 Run `dbaccess.exe` from anywhere.
 
-<img src="images/4.png" width="500">
-<img src="images/5.png" width="500">
-
 ---
 
 # 🎛️ **GUI Features**
 
 ### Login Screen
-<img src="images/6.png" width="500">
+
+<img src="images/4.png" width="500">
 
 * Speed face banner
 * Fields for:
@@ -151,7 +148,10 @@ Run `dbaccess.exe` from anywhere.
 * Integrated console output
 * Speed screams on errors
 
-<img src="images/7.png" width="500">
+<img src="images/5.png" width="500">
+
+<img src="images/6.png" width="500">
+
 ---
 
 # 🧪 **Command Reference**
@@ -213,6 +213,9 @@ SPEED_MAD_CLIPS = [
 
 Replace `speed_icon.ico` → rebuild → enjoy new branding.
 
+
+<img src="images/2.jpeg" width="500">
+
 ---
 
 # 🧩 **Internal Server Behavior**
@@ -255,6 +258,8 @@ This project shows:
 DSA recruiters will NOT understand this.
 Real engineers WILL.
 
+<img src="images/7.png" width="500">
+
 ---
 
 # ⭐ **Support This Madness**
@@ -262,3 +267,5 @@ Real engineers WILL.
 If SpeedDB emotionally damaged you or impressed you, consider leaving a star on the repo.
 
 It helps my sanity grow back. Probably. Please ... I need a job. My crippling soda and momo cravings has financially ruined me. The begging for a start isn't a request , it's a cry for help. 
+
+<img src="images/1.jpeg" width="500">
