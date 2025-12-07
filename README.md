@@ -166,8 +166,6 @@ Run `dbaccess.exe` from anywhere.
 | `DELETE_ROW table WHERE key="value"` | Delete rows by condition  |
 | `HELP`                               | Show command list         |
 
-<img src="images/8.png" width="500">
-
 ---
 
 # 🎞️ **Media System**
@@ -177,6 +175,8 @@ SpeedDB supports custom:
 * Video clips
 * Audio clips
 * Static PNG/JPEG images
+
+<img src="images/8.png" width="500">
 
 ### Folder Structure
 
