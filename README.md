@@ -2,6 +2,8 @@
 
 *A dangerously over-engineered student project featuring encryption, sockets, custom GUI, packaged EXE, and IShowSpeed yelling at your errors.*
 
+<img src="images/speed_icon.ico" width="500">
+
 ---
 
 ## 🚀 **Overview**
