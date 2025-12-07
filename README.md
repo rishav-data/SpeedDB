@@ -18,6 +18,9 @@
 * **PyInstaller packaging**
 * **python-vlc media integration**
 
+<img src="images/1.jpeg" width="500">
+
+
 This project simulates a real database engine — but with the unhinged twist of playing IShowSpeed videos and screams whenever a user messes up a command.
 
 It started as a simple college project.
@@ -59,6 +62,8 @@ It ended as a psychological horror database engine.
 | **Build System**  | PyInstaller              | Creates Windows `.exe`            |
 | **Images**        | Pillow (PIL)             | Image loading & resizing          |
 
+
+<img src="images/2.jpeg" width="500">
 ---
 
 # 🔐 **Encryption Model**
@@ -81,7 +86,7 @@ Opening a `.json` table manually shows only ciphertext like:
 ```
 gAAAAABl2W0IY7n3uEo4rQ...
 ```
-
+<img src="images/enc.gif.gif" height="500" width="700">
 ---
 
 # 📦 **Running SpeedDB**
@@ -99,7 +104,7 @@ Start the GUI client (starts server automatically):
 ```bash
 python dbaccess.py
 ```
-
+<img src="images/3.png" width="500">
 ---
 
 ### ✔ Build Windows Executable
@@ -118,11 +123,15 @@ dist/dbaccess/
 
 Run `dbaccess.exe` from anywhere.
 
+<img src="images/4.png" width="500">
+<img src="images/5.png" width="500">
+
 ---
 
 # 🎛️ **GUI Features**
 
 ### Login Screen
+<img src="images/6.png" width="500">
 
 * Speed face banner
 * Fields for:
@@ -142,6 +151,7 @@ Run `dbaccess.exe` from anywhere.
 * Integrated console output
 * Speed screams on errors
 
+<img src="images/7.png" width="500">
 ---
 
 # 🧪 **Command Reference**
@@ -155,6 +165,8 @@ Run `dbaccess.exe` from anywhere.
 | `INSERT table {json}`                | Insert JSON row           |
 | `DELETE_ROW table WHERE key="value"` | Delete rows by condition  |
 | `HELP`                               | Show command list         |
+
+<img src="images/8.png" width="500">
 
 ---
 
@@ -213,6 +225,8 @@ SpeedDB server (`speeddb_server.py`):
 * Loads / decrypts / updates JSON tables
 * Writes encrypted blobs back to disk
 * Handles malformed input gracefully (usually)
+
+<img src="images/9.png" width="500">
 
 ---
 
