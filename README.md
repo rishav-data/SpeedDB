@@ -241,10 +241,12 @@ SpeedDB server (`speeddb_server.py`):
 Because:
 
 * college projects are boring
-* databases shouldn’t be
-* socket servers are fun
+* databases are important so making mistakes trains the user to be careful or face angry speed
+* socket servers are fun 
 * encryption makes anything cooler
 * and Speed yelling at your errors builds character
+* simply because i wanted to make it
+* i want to traumatize DSA die-hards
 
 This project shows:
 
@@ -257,6 +259,7 @@ This project shows:
 * asynchronous architecture
 * media integration
 * engineering chaos
+* system engineering skills
 
 DSA recruiters will NOT understand this.
 Real engineers WILL.
