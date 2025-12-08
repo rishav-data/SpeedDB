@@ -272,7 +272,7 @@ Real engineers WILL.
 
 If SpeedDB emotionally damaged you or impressed you, consider leaving a star on the repo.
 
-It helps my sanity grow back. Probably. Please ... I need a job. My crippling soda and momo cravings has financially ruined me. The begging for a start isn't a request , it's a cry for help. 
+It helps my sanity grow back. Probably. Please ... I need a job. My crippling soda and momo cravings has financially ruined me. The begging for a star isn't a request , it's a cry for help. 
 
 <img src="images/1.jpeg" width="500">
 
@@ -385,6 +385,8 @@ Client GUI:
 ### **🔹 9. No Testing Framework Yet**
 
 There are no unit tests, integration tests, or CI pipeline.
+
+---
 
 
 **SpeedDB is a fun encrypted JSON-based toy database with a chaotic GUI.
