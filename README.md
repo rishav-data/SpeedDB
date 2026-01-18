@@ -9,7 +9,7 @@
 
 ---
 
-## 🚀 **Overview**
+## **Overview**
 
 **SpeedDB** is a fully custom, encrypted, file-based database system built from scratch using:
 
@@ -30,7 +30,7 @@ It ended as a psychological horror database engine.
 
 ---
 
-# 🧠 **Architecture**
+# **Architecture**
 
 ```
 ┌────────────────────┐
@@ -50,7 +50,7 @@ It ended as a psychological horror database engine.
 
 ---
 
-# ⚙️ **Tech Stack**
+# **Tech Stack**
 
 | Component         | Technology               | Purpose                           |
 | ----------------- | ------------------------ | --------------------------------- |
@@ -67,7 +67,7 @@ It ended as a psychological horror database engine.
 
 ---
 
-# 🔐 **Encryption Model**
+# **Encryption Model**
 
 SpeedDB encrypts every table using:
 
@@ -90,7 +90,7 @@ gAAAAABl2W0IY7n3uEo4rQ...
 <img src="images/enc.gif.gif" height="500" width="700">
 ---
 
-# 📦 **Running SpeedDB**
+# **Running SpeedDB**
 
 ### ✔ Run From Source
 
@@ -127,7 +127,7 @@ Run `dbaccess.exe` from anywhere.
 
 ---
 
-# 🎛️ **GUI Features**
+# **GUI Features**
 
 ### Login Screen
 
@@ -221,7 +221,7 @@ Replace `speed_icon.ico` → rebuild → enjoy new branding.
 
 ---
 
-# 🧩 **Internal Server Behavior**
+# **Internal Server Behavior**
 
 SpeedDB server (`speeddb_server.py`):
 
@@ -236,7 +236,7 @@ SpeedDB server (`speeddb_server.py`):
 
 ---
 
-# 💡 **Why This Project Exists**
+# **Why This Project Exists**
 
 Because:
 
@@ -286,7 +286,7 @@ Here are the major limitations you should know:
 
 ---
 
-### **🔹 1. Limited Command Set**
+### ** 1. Limited Command Set**
 
 Only supports:
 
@@ -302,7 +302,7 @@ No SQL syntax, no UPDATE, no JOINs, no ORDER BY.
 
 ---
 
-### **🔹 2. Minimal Query Logic**
+### ** 2. Minimal Query Logic**
 
 `WHERE` only supports simple:
 
@@ -314,7 +314,7 @@ No operators, no AND/OR, no advanced filtering.
 
 ---
 
-### **🔹 3. Basic Encryption**
+### ** 3. Basic Encryption**
 
 Data at rest **is encrypted**, but:
 
@@ -326,7 +326,7 @@ Good for local use, **not** production.
 
 ---
 
-### **🔹 4. File-Based Storage**
+### ** 4. File-Based Storage**
 
 Tables are:
 
@@ -338,7 +338,7 @@ This means no indexing, no pagination, no optimizations.
 
 ---
 
-### **🔹 5. No Concurrency Control**
+### ** 5. No Concurrency Control**
 
 Server is multi-threaded but:
 
@@ -350,14 +350,14 @@ Works fine for light, local testing.
 
 ---
 
-### **🔹 6. Simple Authentication**
+### ** 6. Simple Authentication**
 
 One shared password.
 No user system, no roles, no audit logging.
 
 ---
 
-### **🔹 7. Not a Production Database**
+### ** 7. Not a Production Database**
 
 Missing:
 
@@ -371,7 +371,7 @@ This project is meant for **learning**, not enterprise workloads.
 
 ---
 
-### **🔹 8. GUI Limitations**
+### ** 8. GUI Limitations**
 
 Client GUI:
 
@@ -382,7 +382,7 @@ Client GUI:
 
 ---
 
-### **🔹 9. No Testing Framework Yet**
+### ** 9. No Testing Framework Yet**
 
 There are no unit tests, integration tests, or CI pipeline.
 
